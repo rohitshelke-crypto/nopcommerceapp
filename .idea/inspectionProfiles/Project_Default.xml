@@ -1,0 +1,13 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="Lib.Relative_absoulate_path.txtUsername" />
+          <option value="Lib.Test_cases.Test_case_orangehrm.Page_object" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
