@@ -1,0 +1,19 @@
+2021-05-24 21:35:33,290: INFO: 
+
+2021-05-24 21:35:33,290: INFO: ====== WebDriver manager ======
+2021-05-24 21:35:33,346: INFO: Current google-chrome version is 90.0.4430
+2021-05-24 21:35:33,346: INFO: Get LATEST driver version for 90.0.4430
+2021-05-24 21:35:37,434: INFO: Driver [C:\Users\Home\.wdm\drivers\chromedriver\win32\90.0.4430.24\chromedriver.exe] found in cache
+2021-05-24 21:35:39,815: INFO: *********Test_001_Login********
+2021-05-24 21:35:39,815: INFO: *********Verifying Home page title**********
+2021-05-24 21:35:40,375: INFO: Driver quitting
+2021-05-24 21:35:42,495: INFO: Driver quitted
+2021-05-24 21:35:42,495: INFO: 
+
+2021-05-24 21:35:42,495: INFO: ====== WebDriver manager ======
+2021-05-24 21:35:42,535: INFO: Current google-chrome version is 90.0.4430
+2021-05-24 21:35:42,543: INFO: Get LATEST driver version for 90.0.4430
+2021-05-24 21:35:46,839: INFO: Driver [C:\Users\Home\.wdm\drivers\chromedriver\win32\90.0.4430.24\chromedriver.exe] found in cache
+2021-05-24 21:35:49,174: INFO: *********Verifying test_login**********
+2021-05-24 21:35:49,366: INFO: Driver quitting
+2021-05-24 21:35:51,606: INFO: Driver quitted

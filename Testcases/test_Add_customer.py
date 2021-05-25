@@ -16,14 +16,15 @@ from PageObjects.LoginPage import LoginPage
 from utilities.read_properties import ReadConfig
 from utilities.custom_logger import logGen
 from PageObjects.AddCustomerPage import Add_customer
+from PageObjects.LoginPage import LoginPage
 import time
 
 
 
 class Test_003_AddCustomer:
     baseurl=ReadConfig.getApplicationURL()
-    username=ReadConfig.getuseremailL()
-    password=ReadConfig.getuserpassword()
+    usernamew=ReadConfig.getuseremailL()
+    passord=ReadConfig.getuserpassword()
     logger=logGen.log_gen()
 
 
@@ -35,10 +36,12 @@ class Test_003_AddCustomer:
         self.driver.maximize_window()
         self.driver.implicitly_wait(10)
 
+
         self.lp = LoginPage(self.driver)
-        self.lp.setUsername(self.username)
-        self.lp.setPassword(self.password)
+        self.lp.setUsername(self.usernamew)
+        self.lp.setPassword(self.passord)
         self.lp.clicklogin()
+
 
         self.addcust = Add_customer(self.driver)
 
@@ -47,14 +50,17 @@ class Test_003_AddCustomer:
         self.addcust.clickcustomermenuItem()
 
 
-
         self.addcust.Add_new()
 
         self.email = random_generator() + "@gmail.com"  ##creating a random data,the method has given below
         self.addcust.setEmail(self.email)
 
         self.addcust.setPassword('12345')
-        self.addcust.setFirstname('rohit')
+
+        self.firstname = random_generator()
+        self.addcust.setFirstname(self.firstname)
+
+       # self.addcust.setFirstname('rohit')
         self.addcust.setLastname('shelke')
         self.addcust.setDOB("2/05/1995")
         self.addcust.setGender("Male")
@@ -75,7 +81,7 @@ class Test_003_AddCustomer:
             print("Add custmeter test is passed")
             self.logger.info("Add custmeter test is passed")
         else:
-            self.driver.save_screenshot(".\\Screenshots\\" + "test_addcustomer_sc.png")
+            self.driver.save_screenshot(".\\Screenshots\\" + "test_addcustomer_sc2.png")
             self.logger.info("Add custmeter test is failed")
             assert True == False
 

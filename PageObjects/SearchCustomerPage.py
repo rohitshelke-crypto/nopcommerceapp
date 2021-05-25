@@ -7,15 +7,16 @@ class Searchcustomer:
     txt_firstname_id = "SearchFirstName"
     txt_lastname_id = "SearchLastName"
     btn_search_id = "search-customers"
-
-
     table_search_xpath = "//table[@role='grid']"
+
+
     table_xpath="""/html/body/div[3]/div[1]/form[1]/section/div/div/div/div[2]/div/div[2]/div[1]/div"""
     #table_xpath_Sir = "//table[@id='customers-grid']"
     #table_xpath ="""//body/div[3]/div[1]/form[1]/section[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]"""
     table_Row_xpath = "//table[@id='customers-grid']//tbody/tr"
 
     table_coloumn_xpath = "//table[@id='customers-grid']//tbody/tr/td"
+
 
     def __init__(self, driver):
         self.driver = driver
@@ -42,6 +43,7 @@ class Searchcustomer:
     ##here length method will find how many coloumns we have and it will return
     def getNoofColoumn(self):
         return len(self.driver.find_elements_by_xpath(self.table_coloumn_xpath))
+
 
     def searchCustomerByEmail(self,email):  ##This point it will pass email id  to this method
         flag = False   ##its a initial variable ,if we found record in table then flag value will be true else its false

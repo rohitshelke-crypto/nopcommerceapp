@@ -13,13 +13,13 @@ def setup():
         return driver
 
 
-'''
+
 
 ##In this method if you want to execute test cases with your desired browser ,you can give here multiple browsers and run your code
 ##use command pytest -v -s F:\selenium_hybrid_framework\Testcases\test_Login.py --browser chrome
 # or pytest -v -s F:\selenium_hybrid_framework\Testcases\test_Login.py --browser firefox
 
-'''
+
 '''
 from selenium import  webdriver
 import pytest
